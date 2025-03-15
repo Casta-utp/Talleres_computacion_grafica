@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0; 
+    /* padding hace referencia al espacio que hay entre el contenido y el borde de un elemento */
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px; /* Add space between elements */
+    padding: 10px;
+    background-color: rgb(22, 21, 21);
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: mediumorchid;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.inicio-registro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px; /* Add space between elements */
+}
+
+.inicio-registro i {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.busqueda input::placeholder {
+    color: white;
+}
+
+.busqueda input {
+    width: 400px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: gray;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px; /* Add space between elements */
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px; /* Add space between elements */
+}
+
+.logo h3 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.logo i {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+i:hover {
+    color: mediumorchid;
+}
+
+.logo img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo img:hover {
+    transform: scale(2.2);
+    transition: transform 0.5s;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px; /* Add space between elements */
+    padding: 10px;
+    background-color: rgb(22, 21, 21);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.titulo img {
+    width: 20px;
+    height: 20px;
+}
+
+.canales {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    width: 400px;
+    max-height: 1500px;
+    padding: 20pxs; /* Add space between elements */
+    background-color: rgb(22, 21, 21);
+    display: flex;
+    flex-direction: column;
+}
+
+.canal img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.canal img:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
+
+.canales p {
+    font-size: 15px;
+}
+
+.canal {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Change to row to place text next to image */
+    gap: 10px; /* Add space between elements */
+}
+
+.directos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between elements */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.directo-info {
+    display: flex;
+    max-height: 25px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    flex-direction: row;
+    justify-content: space-around;
+    color : white;
+}
+
+.directo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Add space between elements */
+    align-items: center;
+    margin: auto;
+    border: 2px solid mediumorchid;
+}
+
+.en-vivo {
+    display: flex;
+    max-height: 25px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    flex-direction: row;
+    justify-content: space-around;
+    color : white;
+}
+
+.directos-recomendados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between elements */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.directo-recomendado {
+    border: 2px solid mediumorchid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between elements */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
