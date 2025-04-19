@@ -1,0 +1,158 @@
+body {
+    background: linear-gradient(rgb(16, 16, 16), white);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 650px;
+    background: white;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.register-login {
+    flex: 1;
+    min-width: 300px;
+}
+
+.register {
+    padding: 40px;
+    position: relative;
+}
+
+.register h3 {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.register input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #dadada;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.register .submit {
+    width: 100%;
+    padding: 10px;
+    background: #1a202b;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register .submit:hover {
+    background: #333;
+}
+
+.login {
+    flex: 1;
+    background-image: linear-gradient(to bottom right, #141515, #1a202b);
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.login h3 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.login button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.login button:hover {
+    transform: scale(1.05);
+}
+
+.login button i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.login .fb {
+    background: #d75b39;
+    color: #fff;
+}
+
+.login .tw {
+    background: #55acef;
+    color: #fff;
+}
+
+.login .correo {
+    background: #1da4de;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .register, .login {
+        padding: 20px;
+    }
+
+    .register h3, .login h3 {
+        font-size: 1.2rem;
+    }
+
+    .register .submit, .login button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .register .submit, .login button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .register h3, .login h3 {
+        font-size: 1rem;
+    }
+}
